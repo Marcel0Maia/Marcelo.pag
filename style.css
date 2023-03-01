@@ -1,0 +1,118 @@
+*{
+    margin: auto;
+}
+
+/*fazendo a animação de troca de cor do fundo*/
+body{
+    animation: ani 10s linear infinite alternate;/*propriedades da animação*/
+}
+@keyframes ani{
+    0%{
+        background-color: red;
+    }
+    20%{
+        background-color: orange;
+    }
+    40%{
+        background-color: yellow;
+    }
+    60%{
+        background-color: green;
+
+    }
+    80%{
+        background-color: blue;
+
+    }
+    100%{
+        background-color: purple;
+    }
+}
+
+.cabeçalho{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    cursor:default;
+}
+
+/*propriedades do corpo da pagina*/
+.all{
+    position: absolute;
+    left: 140px;
+    width: 1000px;
+    height: 592px;
+    background-color: #eee;
+}
+
+.informações{
+    background-color:cornflowerblue;
+    border-radius: 40px;
+    border: 2px solid black;
+    display: flex;
+    gap: 50px;
+}
+
+img{
+    width: 150px;
+    height: 200px;
+}
+
+.intro{
+    font-size: 20px;
+    width: 610px;
+    height: auto;
+}
+
+.sobremim{
+    position: absolute;
+    top: 250px;
+    font-size: 30px;
+    width: 900px;
+    text-align: center;
+}
+
+.hobbies{
+    text-align: left;
+    float: left;
+    background-color: chartreuse;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.carreira{
+    background-color: aqua;
+    border-radius: 30px;
+    border: 2px solid black;
+    float: right;
+}
+
+.contato{
+    color: white;
+    background-color:#333;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 400px;
+    top: 557px;
+    cursor: pointer;
+}
+.contato-info{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 20px;
+    bottom: 34px;
+    cursor:default;
+    height: 100px;
+    width: 300px;
+    font-size: 20px;
+    right: -50px;
+}
+/*fazendo a area de contato ficar oculta*/
+.contato:hover .contato-info{
+    display: block;
+}
