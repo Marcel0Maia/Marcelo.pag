@@ -107,7 +107,7 @@ img{
     border-radius: 20px;
     bottom: 34px;
     cursor:default;
-    height: 100px;
+    height: 250px;
     width: 300px;
     font-size: 20px;
     right: -50px;
@@ -115,4 +115,12 @@ img{
 /*fazendo a area de contato ficar oculta*/
 .contato:hover .contato-info{
     display: block;
+}
+
+.assunto{   
+    padding: 12px 20px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 140px;
+    resize: none;
 }
