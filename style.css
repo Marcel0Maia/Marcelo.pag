@@ -41,8 +41,8 @@ body{
 /*propriedades do corpo da pagina*/
 .all{
     position: absolute;
-    left: 140px;
-    width: 1000px;
+    left: 10.9375%;
+    width: 78.125%;
     height: 592px;
     background-color: #eee;
 }
@@ -53,6 +53,7 @@ body{
     border: 2px solid black;
     display: flex;
     gap: 50px;
+    width: auto;
 }
 
 img{
