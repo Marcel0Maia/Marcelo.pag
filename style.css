@@ -35,7 +35,6 @@ body{
     text-align: center;
     font-size: 50px;
     cursor:default;
-    max-width: 10000px;
 }
 
 /*propriedades do corpo da pagina*/
@@ -44,7 +43,6 @@ body{
     left: 10.9375%;
     width: 78.125%;
     height: 592px;
-    background-color: #eee;
 }
 
 .informações{
@@ -108,12 +106,12 @@ img{
     position: absolute;
     background-color: #333;
     border-radius: 20px;
+    font-size: 20px;
     bottom: 34px;
-    cursor:default;
     height: 250px;
     width: 300px;
-    font-size: 20px;
     right: -50px;
+    cursor:default;
 }
 /*fazendo a area de contato ficar oculta*/
 .contato:hover .contato-info{
@@ -127,14 +125,143 @@ img{
     height: 140px;
     resize: none;
 }
-@media screen and (max-width: 800px){
-        img{
-        width: 100px;
-        height: 100px;
+@media screen and (max-width: 770px){
+    *{
+        margin: auto;
     }
     
+    /*fazendo a animação de troca de cor do fundo*/
+    body{
+        animation: ani 10s linear infinite alternate;/*propriedades da animação*/
+    }
+    @keyframes ani{
+        0%{
+            background-color: red;
+        }
+        20%{
+            background-color: orange;
+        }
+        40%{
+            background-color: yellow;
+        }
+        60%{
+            background-color: green;
+    
+        }
+        80%{
+            background-color: blue;
+    
+        }
+        100%{
+            background-color: purple;
+        }
+    }
+    
+    .cabeçalho{
+        background-color: #333;
+        color: white;
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    .all{
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+    
+    .informações{
+        font-size: 15px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: auto;
+        border-radius: 0px;
+    }
+    
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius:20px ;
+    }
     
     .intro{
+        background-color: cornflowerblue;
+        border-radius: 10px;
         font-size: 15px;
+        width: auto;
+        height: auto;
+    }
+    
+    .sobremim{
+        position: relative;
+        top: 0px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .hobbies{
+        text-align: left;
+        float: none;
+        background-color: chartreuse;
+        border-radius: 12px;
+        border: 2px solid black;
+    }
+    
+    .carreira{
+        background-color:aqua;
+        border-radius: 20px;
+        border: 2px solid black;
+        float: none;
+        text-align: center;
+        font-size: 13px; 
+    }
+    
+    .contato{
+        color: white;
+        background-color: #333;
+        border-radius: 15px;
+        width: 30%;
+        text-align: center;
+        font-size: 16px;
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        left: -10px;
+        top: 0px;
+    }
+    
+    .contato-info{
+        display: none;
+        position: initial;
+        background-color: #333;
+        border-radius: 20px;
+        font-size: 16px;
+        top: 15px;
+        bottom: -248px;
+        height: 250px;
+        width: 195px;
+        right: -50px;
+    }
+    
+    .contato:hover .contato-info{
+        display: block;
+    }
+    
+    .assunto{
+        padding: 0 0;
+        box-sizing: border-box;
+        width: 86%;
+        height: 140px;
+        resize: none; 
     }
 }
