@@ -35,7 +35,7 @@ body{
     text-align: center;
     font-size: 50px;
     cursor:default;
-    width: auto;
+    width: 100%;
 }
 
 /*propriedades do corpo da pagina*/
