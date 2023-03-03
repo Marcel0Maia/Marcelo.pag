@@ -127,8 +127,8 @@ img{
     height: 140px;
     resize: none;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     .intro{
-        font-size: 20px;
+        font-size: 15px;
     }
 }
